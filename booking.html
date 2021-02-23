@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		
+		<title>Booking Page</title>
+
+		<script type="text/javascript" src="xhr.js"></script>
+
+		<script type="text/javascript" src="booking.js"> </script>
+		
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		
+		<style>
+			
+			form {
+				width: 300px;
+			}
+			
+					body {
+				background-image: url("eee.jpg");
+				background-repeat: repeat-x;
+				}
+			
+			
+		</style>
+		</head>
+		
+	<body>
+	
+	
+		<div class="container">
+		<h1><center>CabsOnline<center></h1>
+		
+		
+		<h2></h2>
+		
+		
+		
+	 		
+				<form class="form">
+					<table class="table">
+			
+			<p><label for="cusname"></label>Customer Name:</p><input class="form-control" id="cusname" type="text" name="cusname" required="required"/>
+			
+			<p><label for="phone"></label>Contact Phone:</p><input class="form-control" id="phone" type="text" name="phone" required="required"/>
+			
+			<p><label for="unit"></label>Unit Number (Optional):</p><input class="form-control" id="unit" type="text" name="unit"/>
+			
+			<p><label for="streetno"></label>Street Number:</p><input class="form-control" id="streetno" type="text" name="streetno" required="required"/>
+			
+			<p><label for="streetname"></label>Street Name:</p><input class="form-control" id="streetname" type="text" name="streetname" required="required"/>
+			
+			<p><label for="suburb"></label>Suburb:</p><input class="form-control" id="suburb" type="text" name="suburb" required="required"/>
+			
+			<p><label for="destination"></label>Destination Suburb:</p><input class="form-control" id="destination" type="text" name="destination" required="required"/>
+					
+			<p><label for="pickdate"></label>Pick-Up Date:</p><input class="form-control" id="pickdate" type="date" name="pickdate" required="required"/>
+			
+			<p><label for="picktime"></label>Pick-Up Time:</p><input class="form-control" id="picktime" type="time" name="picktime" required="required"/>
+			
+			</br></br>
+			
+			<input class="btn btn-success" type="button" value="Book Now" onClick = "bookCab()"/>
+			
+			
+					</table>
+				</form>	 
+				
+       	
+		<div id="targetDiv"></div>
+		
+		</br>
+		
+		<a class="btn btn-success" href="admin.html">Go to Admin Page</a>
+		
+		</div>
+		
+	</body>
+	
+</html>
+

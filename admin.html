@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		
+		<title>Admin Page</title>
+
+		<script type="text/javascript" src="xhr.js"></script>
+
+		<script type="text/javascript" src="admin.js"> </script>
+		
+		
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		
+		<style>
+		#bookingid{
+			width: 200px;
+			margin-bottom: 10px;
+		}
+		
+				body {
+				background-image: url("eee.jpg");
+				background-repeat: repeat-x;
+				}
+			
+		
+		</style>
+		</head>
+		
+	<body>
+		<div class="container">
+			<h1><center>CabsOnline<center></h1>
+			
+			<button onclick="doSearch()"  class="btn btn-primary">Search</button>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Booking ID</th>
+						<th>Name</th>
+						<th>Phone</th>
+						<th>Unit</th>
+						<th>Street No</th>
+						<th>Street Name</th>
+						<th>Suburb</th>
+						<th>Destination</th>
+						<th>Pick Date</th>
+						<th>Pick Time</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody id="bookings">
+				</tbody>
+			</table>
+			
+			<input class="form-control" id="bookingid" placeholder="booking id" />
+			
+			<button onclick="doAssign()" class="btn btn-success">Assign</button>
+			
+			</br>
+			
+			<div id="result"></div>
+			
+			</br>
+			
+			<a class="btn btn-success" href="booking.html">Go to Booking Page</a>
+		
+		</div>
+		
+	</body>
+	
+</html>
+
